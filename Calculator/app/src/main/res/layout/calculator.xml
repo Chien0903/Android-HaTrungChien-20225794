@@ -18,8 +18,10 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
-            android:textAlignment="textEnd"
-            android:textSize="50dp" />
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
 
         <TextView
             android:id="@+id/result"
@@ -29,8 +31,10 @@
             android:background="#ccc"
             android:gravity="center"
             android:text="0"
-            android:textAlignment="textEnd"
-            android:textSize="50dp" />
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"

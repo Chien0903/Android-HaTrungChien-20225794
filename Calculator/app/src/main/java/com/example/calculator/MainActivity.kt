@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onNumberClick(number: String) {
         currentOperand += number
+        resultTextView.text = currentOperand
         updateExpression()
     }
 
@@ -116,6 +117,7 @@ class MainActivity : AppCompatActivity() {
     private fun backspace() {
         if (currentOperand.isNotEmpty()) {
             currentOperand = currentOperand.substring(0, currentOperand.length - 1)
+            resultTextView.text = if (currentOperand.isNotEmpty()) currentOperand else "0"
             updateExpression()
         }
     }
